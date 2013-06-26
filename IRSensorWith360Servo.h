@@ -6,7 +6,7 @@ const int LEFT = 1000;
 const int RIGHT = 2000;
 //! delay between sensor to notice, also for debugging
 const int SHORTDELAY = 100;
-//! spining time in miliseconds 
+//! spining time in miliseconds
 const int SPINTIME = 4000;
 //! time for servo to stop in miliseconds
 const int STOPTIME = 1500;
@@ -17,10 +17,6 @@ const int SERVOPIN = 9;
 //! waits for servo to reach position
 const int SERVODELAY = 15;
 
-
-
 // declarations
-//! spins the servo to the left
+//! spins the servo
 void spinLeft(int spinDirection);
-//! stops the servo
-void stopServo();

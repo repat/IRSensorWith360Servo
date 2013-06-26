@@ -3,6 +3,7 @@
  *
  * \author  original by BARRAGAN <http://barraganstudio.com>, edited by repat<repat[at]repat.de
  * \date    June 2013
+ * \version 1.1
  *
 */
 #include <Servo.h> 
@@ -52,11 +53,6 @@ void spin(int spinDirection) {
   delay(SERVODELAY);          
 
   delay(SPINTIME);
-  stopServo();
-  delay(SHORTDELAY);  
-}
-
-void stopServo() {
   servo.writeMicroseconds(STOPTIME);
-  delay(SERVODELAY);
+  delay(SERVODELAY + SHORTDELAY);  
 }
